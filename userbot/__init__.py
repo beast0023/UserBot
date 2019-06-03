@@ -42,16 +42,18 @@ if version_info[0] < 3 or version_info[1] < 6:
     quit(1)
 
 # Check if the config was edited by using the already used variable
-CONFIG_CHECK = os.environ.get("___________PLOX_______REMOVE_____THIS_____LINE__________", None)
+CONFIG_CHECK = os.environ.get("", None)
 
 if CONFIG_CHECK:
     LOGS.error("Please remove the line mentioned in the first hashtag from the config.env file")
     quit(1)
 
-API_KEY = os.environ.get("API_KEY", None)
+API_KEY = os.environ.get("API_KEY","765560")
 
-API_HASH = os.environ.get("API_HASH", # Copyright (C) 2019 The Raphielscape Company LLC.
-#
+API_HASH = os.environ.get("API_HASH","059a9ff62bf1a2e4915bf7c317a49085")
+                          
+# Copyright (C) 2019 The Raphielscape Company LLC.
+
 # Licensed under the Raphielscape Public License, Version 1.b (the "License");
 # you may not use this file except in compliance with the License.
 #
