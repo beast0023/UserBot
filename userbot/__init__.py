@@ -44,10 +44,6 @@ if version_info[0] < 3 or version_info[1] < 6:
 # Check if the config was edited by using the already used variable
 CONFIG_CHECK = os.environ.get("", None)
 
-if CONFIG_CHECK:
-    LOGS.error("Please remove the line mentioned in the first hashtag from the config.env file")
-    quit(1)
-
 API_KEY = os.environ.get("API_KEY","765560")
 
 API_HASH = os.environ.get("API_HASH","059a9ff62bf1a2e4915bf7c317a49085")
